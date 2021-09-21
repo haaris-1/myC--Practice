@@ -6,16 +6,16 @@ int main(){
 
     cout << "Hello gitHub\n";
     cout<<"Hey git \n";
-    stack<int> st;
+    stack<char> st;
     string s;
-    cin.ignore();
-    getline(s,cin);
+    // cin.ignore();
+    getline(cin,s);
     for(int i=0;i<s.length();i++){
-        s.push(s[i]);
+        st.push(s[i]);
     }
     for(int i=0;i<s.length();i++){
-        cout<<s.top();
-        s.pop();
+        cout<<st.top();
+        st.pop();
     }
     return 0;
 }
